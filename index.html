@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistebit | Soporte Técnico Profesional en Irapuato</title>
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo rápido para el botón de prueba */
+        .test-section {
+            text-align: center;
+            padding: 20px;
+            background: #f0f4f8;
+        }
+        .btn-test {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-test:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/524622090526?text=Hola%20Sistebit,%20vengo%20de%20tu%20página%20web%20y%20necesito%20ayuda%20con%20un%20equipo." class="whatsapp-btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span class="tooltip">¿Dudas? Chatea con nosotros</span>
+    </a>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SISTE<span>BIT</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="servicios.html"><i class="fas fa-tools"></i> Servicios</a></li>
+                <li><a href="#contacto"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+            </ul>
+            <a href="tel:4622090526" class="nav-cta">Llamar Ahora</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-premium">
+        <div class="hero-overlay"></div>
+        <div class="hero-shapes">
+            <div class="shape s1"></div>
+            <div class="shape s2"></div>
+        </div>
+        <div class="hero-content" data-aos="zoom-out-up">
+            <span class="badge">Soporte Técnico en Irapuato</span>
+            <h1>Soluciones Bit a Bit para tu <span>Negocio</span></h1>
+            <p>Expertos en reparación de impresoras, laptops y mantenimiento preventivo. ¡Hacemos que tu tecnología vuele!</p>
+            <div class="hero-actions">
+                <a href="servicios.html" class="btn-main">Nuestros Servicios</a>
+                <a href="#contacto" class="btn-outline">Ver Mapa</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE PRUEBA DE SINCRONIZACIÓN -->
+    <section class="test-section" data-aos="fade-in">
+        <p style="margin-bottom: 10px; color: #555; font-weight: 600;">¿Funciona la sincronización?</p>
+        <button class="btn-test" onclick="alert('¡Sincronización exitosa desde Cursor! 🚀')">
+            <i class="fas fa-sync-alt"></i> Prueba de sincronización
+        </button>
+    </section>
+
+    <!-- Sección de Números Dinámicos -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3 class="counter" data-target="15">0</h3>
+            <p>Años de Experiencia</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="5000">0</h3>
+            <p>Equipos Reparados</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="100">0</h3>
+            <p>% Garantizado</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 data-aos="fade-up">Servicios Destacados</h2>
+            <div class="grid-services">
+                <div class="card" data-aos="fade-up">
+                    <div class="icon">🖨️</div>
+                    <h3>Reparación de Impresoras</h3>
+                    <p>Mantenimiento a sistemas de tinta continua, láser y térmicas.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">💻</div>
+                    <h3>Soporte PC y Laptops</h3>
+                    <p>Limpieza física, cambio de pasta térmica y optimización de software.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">🚀</div>
+                    <h3>Mejora de Rendimiento</h3>
+                    <p>Instalación de discos SSD y aumento de memoria RAM.</p>
+                </div>
+            </div>
+            <a href="servicios.html" class="back-home" style="display: block; margin-top: 40px; text-decoration: none; font-weight: bold; color: var(--primary);">Ver todos los detalles →</a>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-map">
+        <div class="container">
+            <h2 data-aos="fade-up">Nuestra Ubicación</h2>
+            <div class="contact-grid">
+                <div class="map-info" data-aos="fade-right">
+                    <p><strong>Sistebit Irapuato</strong></p>
+                    <p>📍 Blvd. Díaz Ordaz 1723-local 15a, Col. Centro</p>
+                    <p>📞 462 626 5555 | 462 209 0526</p>
+                    <p>⏰ Lun-Vie: 10am-6pm | Sáb: 9am-2pm</p>
+                </div>
+                <div class="map-frame" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.932912440964!2d-101.3555333!3d20.672651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c7fd452f30b91%3A0xc3b8b6038378546!2sSistebit!5e0!3m2!1ses-419!2smx!4v1714850000000!5m2!1ses-419!2smx" width="100%" height="300" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sistebit Irapuato - Pasión por la Tecnología</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
