@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Sistebit Irapuato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la página de servicios */
+        .servicios-hero {
+            padding: 150px 10% 60px;
+            background: var(--dark);
+            text-align: center;
+            color: white;
+        }
+        .detalle-servicios {
+            padding: 60px 10%;
+            background: #f8fafc;
+        }
+        .servicio-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            gap: 30px;
+        }
+        .servicio-item:nth-child(even) { flex-direction: row-reverse; }
+        .servicio-img {
+            flex: 1;
+            font-size: 5rem;
+            text-align: center;
+            background: var(--gray);
+            padding: 40px;
+            border-radius: 15px;
+            color: var(--primary);
+        }
+        .servicio-info { flex: 2; }
+        .servicio-info h3 { font-size: 1.8rem; color: var(--dark); margin-bottom: 15px; }
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .servicio-item { flex-direction: column !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SISTE<span>BIT</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="index.html#contacto"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+            </ul>
+            <a href="https://wa.me/524622090526" class="nav-cta">Cotizar por WhatsApp</a>
+        </div>
+    </nav>
+
+    <header class="servicios-hero">
+        <h1 data-aos="fade-down">Nuestras Soluciones Tecnológicas</h1>
+        <p data-aos="fade-up">Especialistas en Irapuato con más de 15 años de experiencia.</p>
+    </header>
+
+    <section class="detalle-servicios">
+        <!-- Servicio 1 -->
+        <div class="servicio-item" data-aos="fade-right">
+            <div class="servicio-img"><i class="fas fa-print"></i></div>
+            <div class="servicio-info">
+                <h3>Reparación de Impresoras</h3>
+                <p>Somos expertos en diagnóstico y reparación de impresoras de inyección de tinta, láser y térmicas. Solucionamos problemas de cabezales tapados, atascos de papel, errores de sistema y mantenimiento preventivo para prolongar la vida útil de tu equipo.</p>
+                <a href="index.html" class="back-home">← Volver al inicio</a>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="servicio-item" data-aos="fade-left">
+            <div class="servicio-img"><i class="fas fa-laptop-medical"></i></div>
+            <div class="servicio-info">
+                <h3>Mantenimiento de Cómputo</h3>
+                <p>Limpieza física profunda (retiro de polvo, cambio de pasta térmica) y optimización de sistema operativo. Eliminación de virus, malware y corrección de lentitud en laptops y computadoras de escritorio.</p>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="servicio-item" data-aos="fade-right">
+            <div class="servicio-img"><i class="fas fa-microchip"></i></div>
+            <div class="servicio-info">
+                <h3>Actualización de Hardware (Upgrades)</h3>
+                <p>¿Tu computadora está lenta? No compres una nueva, ¡actualízala! Instalamos unidades de estado sólido (SSD) y ampliamos la memoria RAM para que tu equipo sea hasta 10 veces más rápido.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sistebit Irapuato - Blvd. Díaz Ordaz 1723</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
+</body>
+</html>
